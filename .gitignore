@@ -1,0 +1,12 @@
+# This is generated, don't need to commit
+*.pdf
+
+# Vimtex Junk, Auxiliary, & Log files
+.dvi
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.xdv
+*.syn*tex*

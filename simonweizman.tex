@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TorrentofShame Resume
+% LuaLaTeX Template
+% Version 1.0.0 (1/3/2021)
+%
+% Authors:
+% Simon Weizman (contact@simon.weizman.us)
+%
+% License:
+% MIT License (see included LICENSE file)
+%
+% !TEX encoding = utf8
+% !TEX program = lualatex
+% NOTE: This template must be compiled with LuaLaTeX, the previous line
+% should ensure that LuaLaTeX is used automatically; however, if it does not,
+% you will need to specify LuaLaTeX as the engine to use in your editor or script.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------------------------------------
+%    Packages & Other Document Config
+%---------------------------------------
+\documentclass[11pt, letterpaper]{resume}
+
+
+\let\\\relax % Allow for lua to write \ commands (?) that work 
+\directlua{config = require('config')}
+\directlua{f = require('resume')}
+
+\graphicspath{{./images}}
+
+\usepackage{lipsum}
+%---------------------------------------
+%    Personal Info
+%---------------------------------------
+
+\directlua{f.profile()}
+
+\begin{document}
+
+\makeprofile
+
+\begin{paracol}{2}
+
+%---------------------------------------
+%    Summary (personal statement)
+%---------------------------------------
+
+%\section*{Summary}
+
+%\directlua{
+ %tex.sprint(config.summary or '\\lipsum[1][1-2]')
+%}
+
+%\bigskip
+
+%---------------------------------------
+%    Experience
+%---------------------------------------
+
+\section*{Experience}
+%\expentry{} % Job Title
+%{} % Employer
+%{Jun 2019 -- Current} % Duration
+%{} % Location
+%{} % Description
+
+\directlua{f.experience()}
+
+\bigskip
+
+%---------------------------------------
+%    Projects
+%---------------------------------------
+
+\section*{Projects}
+%\projectentry{} % Project Name
+%{} % Duration
+%{} % Short Description
+
+\directlua{f.projects()}
+
+\switchcolumn % Switch to next paracol column
+
+%---------------------------------------
+%    Skills
+%---------------------------------------
+
+\section*{Skills}
+
+\directlua{f.skills()}
+
+\bigskip
+
+%---------------------------------------
+%    Education
+%---------------------------------------
+
+\section*{Education}
+%\expentry{} % Major
+%{Jun 2019 -- Current} % Duration
+%{} % School
+\begin{supertabular}{rl}
+
+  \directlua{f.education()}
+
+\end{supertabular}
+
+%---------------------------------------
+%    Certifications
+%---------------------------------------
+
+\section*{Certifications}
+%\certentry{} % Name
+%{} % Issuer
+%{} % Issue Date
+%{} % Expire Date (leave empty if doesn't expire)
+\begin{supertabular}{rl}
+
+  \directlua{f.certifications()}
+
+\end{supertabular}
+
+%---------------------------------------
+%    Languages
+%---------------------------------------
+
+%\section*{Languages}
+%\langentry{} % Language
+%{} % Fluency
+
+%\begin{supertabular}{rl}
+
+%\langentry{English}
+%{Native Speaker}
+
+%\end{supertabular}
+
+\end{paracol}
+
+\end{document}
