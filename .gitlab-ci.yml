@@ -1,5 +1,13 @@
 stages:
+  - lint
   - build
+
+lint:
+  stage: lint
+  image: torrentofshame/lualatex-texliveonfly
+  script:
+    - tlmgr install chktex
+    - chktex simonweizman.tex
 
 build:
   stage: build
