@@ -31,8 +31,7 @@ local config = {
         "Using Agile Methodology in the team.",
         "Collaborate with front end and mobile teams to ensure the quality of the final product.",
         "Design and maintained unit tests in collaboration with team members to ensure that the code functions properly.",
-        --"Architected the initial boilerplate code.",
-        "Assisted in deployment using GitHub Actions, Kubernetes, and Nginx."
+        "Deployed using Kubernetes to scale for 600+ people."
       }
     },
     {
@@ -132,6 +131,7 @@ local config = {
     {
       categoryName = "Tools & Technologies",
       items = {
+        "Kubernetes",
         "MERN",
         "Git",
         "Nginx",
@@ -140,7 +140,7 @@ local config = {
         "DNS",
         "Prometheus",
         "Grafana",
-        "Digital Ocean"
+        "AWS"
       }
     }
   },
