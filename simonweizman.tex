@@ -24,21 +24,22 @@
 
 
 \let\\\relax % Allow for lua to write \ commands (?) that work 
-\directlua{config = require('config')}
-\directlua{f = require('resume')}
+\directlua{config = require ('config')}
+\directlua{f = require ('resume')}
 
-\graphicspath{{./images}}
+\graphicspath{{./images/}}
 
 \usepackage{lipsum}
 %---------------------------------------
 %    Personal Info
 %---------------------------------------
 
-\directlua{f.profile()}
 
 \begin{document}
 
-\makeprofile
+\directlua{f.profile ()}
+
+\makeprofile%
 
 \begin{paracol}{2}
 
@@ -65,7 +66,7 @@
 %{} % Location
 %{} % Description
 
-\directlua{f.experience()}
+\directlua{f.experience ()}
 
 \bigskip
 
@@ -78,9 +79,9 @@
 %{} % Duration
 %{} % Short Description
 
-\directlua{f.projects()}
+\directlua{f.projects ()}
 
-\switchcolumn % Switch to next paracol column
+\switchcolumn% Switch to next paracol column
 
 %---------------------------------------
 %    Skills
@@ -88,7 +89,7 @@
 
 \section*{Skills}
 
-\directlua{f.skills()}
+\directlua{f.skills ()}
 
 \bigskip
 
@@ -102,7 +103,7 @@
 %{} % School
 \begin{supertabular}{rl}
 
-  \directlua{f.education()}
+  \directlua{f.education ()}
 
 \end{supertabular}
 
@@ -117,7 +118,7 @@
 %{} % Expire Date (leave empty if doesn't expire)
 \begin{supertabular}{rl}
 
-  \directlua{f.certifications()}
+  \directlua{f.certifications ()}
 
 \end{supertabular}
 

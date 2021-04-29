@@ -1,0 +1,17 @@
+stages:
+  - build
+
+build:
+  stage: build
+  image: torrentofshame/lualatex-texliveonfly
+  script:
+    - luaotfload-tool -u
+    - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
+  artifacts:
+    paths:
+      - ./*.pdf
+
+# Cache aux files to speed things up
+cache:
+  untracked: true
+  key: "$CI_BUILD_NAME"
