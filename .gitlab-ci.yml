@@ -6,14 +6,12 @@ lint:
   stage: lint
   image: torrentofshame/lualatex-texliveonfly
   script:
-    - tlmgr install chktex
     - chktex simonweizman.tex
 
 build:
   stage: build
   image: torrentofshame/lualatex-texliveonfly
   script:
-    - luaotfload-tool -u
     - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
   artifacts:
     paths:
