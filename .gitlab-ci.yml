@@ -1,18 +1,41 @@
 stages:
   - lint
+  - test
   - build
 
 lint:
   stage: lint
   image: torrentofshame/lualatex-texliveonfly
+  needs: []
   script:
     - chktex simonweizman.tex
+
+test:
+  stage: test
+  image: torrentofshame/lua-bustedcov
+  needs: []
+  script:
+    - busted
+    - luarocks install luacov
+    - luarocks install luacov-cobertura
+    - luacov
+    - luacov-cobertura -o cobertura.xml
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - junit.xml
+      cobertura: cobertura.xml
 
 build:
   stage: build
   image: torrentofshame/lualatex-texliveonfly
+  needs:
+    - lint
+    - test
   script:
     - texliveonfly --compiler=latexmk --arguments='-pdflua -interaction=nonstopmode' simonweizman.tex
+    - mv simonweizman.pdf resume.pdf
   artifacts:
     paths:
       - ./*.pdf

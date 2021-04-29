@@ -1,0 +1,10 @@
+return {
+  _all = {
+    coverage = true
+  },
+  default = {
+    ROOT = { "." },
+    output = "junit",
+    Xoutput = "junit.xml"
+  }
+}
