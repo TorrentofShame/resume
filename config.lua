@@ -21,7 +21,7 @@ local config = {
       }
     },
     {
-      jobTitle = "Back End Developer Intern",
+      jobTitle = "Back End Developer",
       organization = "Knight Hacks",
       startDate = "Feb 2021",
       endDate = nil,
