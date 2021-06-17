@@ -93,7 +93,8 @@ local config = {
         "JavaScript",
         "Python",
         "Lua",
-        "LaTeX"
+        "LaTeX",
+        "C"
       }
     },
     {
@@ -116,7 +117,8 @@ local config = {
         "OAuth",
         "CDN",
         "Flask",
-        "Express.js"
+        "Express.js",
+        "Celery"
       }
     },
     {
@@ -140,7 +142,9 @@ local config = {
         "DNS",
         "Prometheus",
         "Grafana",
-        "Digital Ocean"
+        "Digital Ocean",
+        "Kubernetes",
+        "AWS"
       }
     }
   },
