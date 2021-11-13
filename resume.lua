@@ -15,14 +15,21 @@ local f = {
     entry = ""
     for _,e in ipairs(config.experience) do
       period = e.startDate.." -- "..(e.endDate or "Current")
-      entry = entry .. "\\expentry{"..e.jobTitle.."}{"..e.organization.."}{"..period.."}{"..e.location.."}{\\begin{itemize}"
-      desc = ""
+      e.location = e.location or ""
+      entry = entry .. "\\expentry{"..e.jobTitle.."}{"..e.organization.."}{"..period.."}{"..e.location.."}{"
 
-      for i=1,#e.description do
-        desc = desc .. "\\item "..e.description[i].."\n"
+      if e.description and type(e.description) == "table" and #e.description > 0 then
+          desc = "\\begin{itemize}"
+
+          for i=1,#e.description do
+              desc = desc .. "\\item "..e.description[i].."\n"
+          end
+
+          entry = entry..desc.."\\end{itemize}\\leavevmode"
       end
 
-      entry = entry..desc.."\\end{itemize}\\leavevmode}"
+      entry = entry .. "}"
+
     end
     
     return entry
