@@ -34,6 +34,7 @@
 \RequirePackage{hyperref}
 \RequirePackage{graphicx}
 \RequirePackage[nobottomtitles*]{titlesec}
+\RequirePackage[none]{hyphenat}
 
 % Pass options to Loaded Class (ie: super)
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
@@ -121,18 +122,20 @@
 
     \small
   }
-  {}
+  {\newline}
 
 %-----------------------------------------------------------
 %    Experience
 %-----------------------------------------------------------
 
 \newcommand{\expentry}[5]{%
-  \medskip
-  \raggedright{\large\textcolor{maingreen}{#1} \hfill \textsc{\footnotesize#3}} \\ % Job title & Duration
-  \ifstrequal{#2}{}{}{{\raggedright\normalsize{\textbf{\textcolor{mainblue}{#2}}}}\\} % Employer
-  \ifstrequal{#4}{}{}{{\raggedright\footnotesize{\textbf{\faMapMarker*\ #4}}}\\} % Location
-  \ifstrequal{#5}{}{}{#5\\} % Description
+  \begin{samepage}
+      \medbreak
+      \raggedright{\large\textcolor{maingreen}{#1} \hfill \textsc{\footnotesize#3}}\nopagebreak \\ % Job title & Duration
+      \ifstrequal{#2}{}{}{{\raggedright\normalsize{\textbf{\textcolor{mainblue}{#2}}}}\nopagebreak\\} % Employer
+      \ifstrequal{#4}{}{}{{\raggedright\footnotesize{\textbf{\faMapMarker*\ #4}}}\nopagebreak\\} % Location
+      \ifstrequal{#5}{}{}{#5\\} % Description
+  \end{samepage}
 }
 
 %-----------------------------------------------------------
@@ -140,7 +143,7 @@
 %-----------------------------------------------------------
 
 \newcommand{\projectentry}[3]{
-  \medskip
+  \medskip\newline
   {\raggedright\normalsize\textcolor{maingreen}{#1} \hfill \textbf{\footnotesize#2}\\} % Name & Duration
   \expandafter\ifstrequal\expandafter{#3}{}{}{#3\\} % Description
 }
