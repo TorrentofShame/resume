@@ -219,6 +219,13 @@ local config = {
   },
   certifications = {
     {
+      name = "CompTIA Security+ ce",
+      issuer = "CompTIA",
+      issueDate = "Dec 2021",
+      expireDate = "Dec 2024",
+      logo = "comptia-security-ce-certification"
+    },
+    {
       name = "Autodesk Inventor Certified User",
       issuer = "Autodesk",
       issueDate = "May 2020",
