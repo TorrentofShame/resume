@@ -19,7 +19,7 @@
 %    Required Packages
 %-----------------------------------------------------------
 
-%\RequirePackage{fontspec}
+\RequirePackage{fontspec}
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
 \RequirePackage{ragged2e}
@@ -30,7 +30,7 @@
 \RequirePackage{supertabular}
 \RequirePackage{multirow}
 \RequirePackage{paracol}
-\RequirePackage[hmargin=0.591in, vmargin=0.689in, letterpaper]{geometry}
+\RequirePackage[hmargin=0.591in, vmargin=0.5in, letterpaper]{geometry}
 \RequirePackage{hyperref}
 \RequirePackage{graphicx}
 \RequirePackage[nobottomtitles*]{titlesec}
