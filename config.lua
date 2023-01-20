@@ -25,7 +25,7 @@ local config = {
       jobTitle = "Software Engineering Intern",
       organization = "SavvySuit",
       startDate = "Mar 2021",
-      endDate = nil,
+      endDate = "Aug 2022",
       location = "Orlando, FL",
       description = {
           "Work on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
@@ -41,7 +41,7 @@ local config = {
         endDate = "May 2022",
         location = "Remote/Virtual",
         description = {
-            "Working closely with clients to create custom scripts and modify pre-existing code.",
+            "Worked closely with clients to create custom scripts and modify pre-existing code.",
             "Reconstructed websites using incomplete web archive snapshots."
         }
     },
@@ -207,7 +207,9 @@ local config = {
         "Kubernetes",
         "AWS",
         "Linux",
-        "Vim"
+        "Vim",
+        "Splunk",
+        "Palo Alto"
       }
     }
   },
