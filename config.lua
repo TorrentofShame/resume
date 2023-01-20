@@ -2,7 +2,7 @@ local config = {
   profile = {
     logo = "logo",
     name = "Simon Weizman",
-    headline = "Computer Science Student at University of Central Florida | SWE Intern at SavvySuit",
+    headline = "Computer Science Student at University of Central Florida | Systems Engineer at GLESEC",
     email = "contact@simon.weizman.us",
     website = "simon.weizman.dev",
     git = "gitlab.com/torrentofshame",
@@ -13,6 +13,14 @@ local config = {
         I decided to take on freelance development as a way to further my abilities and solve niche problems that I wouldn't be able to find elsewhere.
   ]], -- nil causes lipsum[1][1-2]
   experience = {
+    {
+      jobTitle = "Systems Engineer",
+      organization = "GLESEC Group",
+      startDate = "Aug 2022",
+      endDate = nil,
+      location = "Orlando, FL",
+      description = {}
+    },
     {
       jobTitle = "Software Engineering Intern",
       organization = "SavvySuit",
@@ -30,10 +38,11 @@ local config = {
         jobTitle = "Freelance Developer",
         organization = "Upwork",
         startDate = "Mar 2021",
-        endDate = nil,
+        endDate = "May 2022",
         location = "Remote/Virtual",
         description = {
-            "Working closely with clients to create custom scripts and modify pre-existing code."
+            "Working closely with clients to create custom scripts and modify pre-existing code.",
+            "Reconstructed websites using incomplete web archive snapshots."
         }
     },
     {
@@ -67,7 +76,7 @@ local config = {
       }
     },
     {
-      jobTitle = "Volunteer Lua Developer",
+      jobTitle = "Lua Developer",
       organization = "Innovative Gamers",
       startDate = "Mar 2019",
       endDate = "Feb 2020",
@@ -122,7 +131,7 @@ local config = {
         name = "Personal Homelab Server",
         startDate = "Mar 2018",
         endDate = "Jul 2020",
-        shortDescription = "I owned, maintained, and administered an old Dell Poweredge R710 that I used to learn about virtualization, DevOps and server management"
+        shortDescription = "I owned, maintained, and administered an old Dell Poweredge R710 that I used to learn about virtualization, DevOps and server management."
     },
     {
         name = "Why don't people format their numbers browser extension",
@@ -136,16 +145,15 @@ local config = {
       categoryName = "Programming Languages",
       items = {
         "HTML",
-        "CSS",
-        "SASS",
-        "LESS",
+        "CSS/SASS",
         "JavaScript",
         "TypeScript",
         "Python",
         "Lua",
         "LaTeX",
         "C",
-        "Java"
+        "Java",
+        "Bash"
       }
     },
     {
