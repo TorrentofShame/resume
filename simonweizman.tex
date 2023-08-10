@@ -46,6 +46,7 @@
 %    Summary (personal statement)
 %---------------------------------------
 
+\luaif{config.summary ~= false}{%
 \section*{Summary}
 
 \directlua{
@@ -53,6 +54,9 @@
 }
 
 \smallskip
+}{%
+% The Summary section should not show if config.summary is false
+}
 
 %---------------------------------------
 %    Experience
