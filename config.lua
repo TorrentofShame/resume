@@ -2,16 +2,16 @@ local config = {
   profile = {
     logo = "logo",
     name = "Simon Weizman",
-    headline = "Computer Science Student at University of Central Florida | Systems Engineer at GLESEC",
+    headline = "Systems Engineer at GLESEC",
     email = "contact@simon.weizman.us",
     website = "simon.weizman.dev",
     git = "gitlab.com/torrentofshame",
     location = "Orlando, Florida, US"
   },
-  summary = [[
-        I'm a passionate, resourceful, and self-taught developer and an undergraduate student of Computer Science at UCF.
-        I decided to take on freelance development as a way to further my abilities and solve niche problems that I wouldn't be able to find elsewhere.
-  ]], -- nil causes lipsum[1][1-2]
+  summary = false,
+  --summary = [[
+  --      I'm a passionate, resourceful, and self-taught developer.
+  --]], -- nil causes lipsum[1][1-2]
   experience = {
     {
       jobTitle = "Systems Engineer",
@@ -28,10 +28,10 @@ local config = {
       endDate = "Aug 2022",
       location = "Orlando, FL",
       description = {
-          "Work on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
+          "Worked on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
           "Architected a dynamic form configuration system using yaml, Formik, and React that allows for the easy configuration of forms that validate user input and automatically add more fields depending on user input.",
-          "Manipulate local data, enable offline and cloud synchronization using Amplify DataStore in the frontend",
-          "Implement data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend"
+          "Manipulated local data, enable offline and cloud synchronization using Amplify DataStore in the frontend.",
+          "Implemented data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend."
       }
     },
     {
@@ -209,7 +209,9 @@ local config = {
         "Linux",
         "Vim",
         "Splunk",
-        "Palo Alto"
+        "Palo Alto",
+        "Duo",
+        "Radware Cloud WAF"
       }
     }
   },
@@ -218,7 +220,7 @@ local config = {
       degree = "Computer Science BS",
       institution = "University of Central Florida",
       startDate = "Jul 2020",
-      endDate = "Dec 2023"
+      endDate = "Aug 2023"
     },
     {
       degree = "High School Diploma",
@@ -229,11 +231,25 @@ local config = {
   },
   certifications = {
     {
+      name = "Certified Technical Solution Architect",
+      issuer = "Cynet",
+      issueDate = "Aug 2022",
+      expireDate = nil,
+      logo = "cynet-logo"
+    },
+    {
       name = "CompTIA Security+ ce",
       issuer = "CompTIA",
       issueDate = "Dec 2021",
       expireDate = "Dec 2024",
       logo = "comptia-security-ce-certification"
+    },
+    {
+      name = "Certified Level 1 Duo Administrator",
+      issuer = "Duo",
+      issueDate = "Aug 2022",
+      expireDate = "Aug 2024",
+      logo = "duo-level-one-administrator"
     },
     {
       name = "Autodesk Inventor Certified User",

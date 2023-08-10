@@ -76,6 +76,12 @@
 
 \titlespacing{\section}{0pt}{0pt}{8pt}
 
+\newcommand*{\luaif}[1]{%
+  \ifnum1=\directlua{tex.sprint((#1) and 1 or 0)}%
+  \expandafter\@firstoftwo%
+  \else\expandafter\@secondoftwo\fi%
+}
+
 %-----------------------------------------------------------
 %    Header Layout
 %-----------------------------------------------------------

@@ -46,6 +46,8 @@
 %    Summary (personal statement)
 %---------------------------------------
 
+% Don't question why this is an else - if statement instead of an if - else...it works and I can't care enough to figure out why.
+\luaif{config.summary == false}{%
 \section*{Summary}
 
 \directlua{
@@ -53,6 +55,9 @@
 }
 
 \smallskip
+}{%
+% The Summary section should not show if config.summary is false
+}
 
 %---------------------------------------
 %    Experience
