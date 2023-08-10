@@ -46,7 +46,8 @@
 %    Summary (personal statement)
 %---------------------------------------
 
-\luaif{config.summary ~= false}{%
+% Don't question why this is an else - if statement instead of an if - else...it works and I can't care enough to figure out why.
+\luaif{config.summary == false}{%
 \section*{Summary}
 
 \directlua{

@@ -231,7 +231,7 @@ local config = {
   },
   certifications = {
     {
-      name = "Cynet Security Certified Technical Solution Architect",
+      name = "Certified Technical Solution Architect",
       issuer = "Cynet",
       issueDate = "Aug 2022",
       expireDate = nil,
