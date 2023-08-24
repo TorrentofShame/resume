@@ -19,7 +19,13 @@ local config = {
       startDate = "Aug 2022",
       endDate = nil,
       location = "Orlando, FL",
-      description = {}
+      description = {
+        "Managing AWS infrastructure such as EC2, ECR, and VPCs.",
+        "Utilizing IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, Powershell to automate the configuration of servers, networks, and AD users.",
+        "Creating and Optimizing Splunk dashboards for SOC and clients to utilize when monitoring security services.",
+        "Creating custom integrations to streamline the collection of customer logs.",
+        "Managing Palo Alto Firewalls with Panorama"
+      }
     },
     {
       jobTitle = "Software Engineering Intern",
@@ -103,6 +109,12 @@ local config = {
     }
   },
   projects = {
+    {
+      name = "BEARMAX",
+      startDate = "Aug 2022",
+      endDate = "May 2023",
+      shortDescription = "A Robot for Social Emotional Learning Facilitation for Children with Autism."
+    },
     {
       name = "LuaLaTeX Resume",
       startDate = "Nov 2020",
@@ -200,10 +212,10 @@ local config = {
         "Nginx",
         "Docker",
         "CI/CD",
-        "DNS",
+        "Active Directory",
         "Prometheus",
         "Grafana",
-        "Digital Ocean",
+        "Tenable Nessus",
         "Kubernetes",
         "AWS",
         "Linux",
@@ -211,7 +223,8 @@ local config = {
         "Splunk",
         "Palo Alto",
         "Duo",
-        "Radware Cloud WAF"
+        "Radware Cloud WAF",
+        "Zabbix"
       }
     }
   },
