@@ -94,7 +94,7 @@ local config = {
         "Documented the steps necessary to configure the different features on the server.",
         "Maintained and managed the server's code and database."
       }
-    },
+    }--[[,
     {
       jobTitle = "Summer Camp Counselor",
       organization = "Peg Camp",
@@ -106,7 +106,7 @@ local config = {
         "Taught multiple computer programs to children at the beginning, intermediate, and advanced levels, including: Python and Tinker CAD.",
         "Supported campers through the learning process ensuring a fun and successful experience."
       }
-    }
+    }--]]
   },
   projects = {
     {
