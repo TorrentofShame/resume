@@ -2,10 +2,10 @@ local config = {
   profile = {
     logo = "logo",
     name = "Simon Weizman",
-    headline = "Systems Engineer at GLESEC",
+    headline = "Systems Engineer @ GLESEC",
     email = "contact@simon.weizman.us",
     website = "simon.weizman.dev",
-    git = "gitlab.com/torrentofshame",
+    git = "github.com/TorrentofShame",
     location = "Orlando, Florida, US"
   },
   summary = false,
@@ -16,22 +16,24 @@ local config = {
     {
       jobTitle = "Systems Engineer",
       organization = "GLESEC Group",
-      startDate = "Aug 2022",
+      startDate = "2022-08-01",
       endDate = nil,
       location = "Orlando, FL",
       description = {
         "Managing AWS infrastructure such as EC2, ECR, and VPCs.",
         "Utilizing IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, Powershell to automate the configuration of servers, networks, and AD users.",
         "Creating and Optimizing Splunk dashboards for SOC and clients to utilize when monitoring security services.",
-        "Creating custom integrations to streamline the collection of customer logs.",
-        "Managing Palo Alto Firewalls with Panorama"
+        "Creating and Maintaining Notable Events for use by SOC using logs ingested from various sources.",
+        "Creating custom integrations to streamline the collection of customer logs from various sources.",
+        "Managing Palo Alto Firewalls with Panorama",
+        "Deploying and Tuning WAFs for client public-facing applications."
       }
     },
     {
       jobTitle = "Software Engineering Intern",
       organization = "SavvySuit",
-      startDate = "Mar 2021",
-      endDate = "Aug 2022",
+      startDate = "2021-03-01",
+      endDate = "2022-08-01",
       location = "Orlando, FL",
       description = {
           "Worked on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
@@ -43,8 +45,8 @@ local config = {
     {
         jobTitle = "Freelance Developer",
         organization = "Upwork",
-        startDate = "Mar 2021",
-        endDate = "May 2022",
+        startDate = "2021-03-01",
+        endDate = "2022-05-01",
         location = "Remote/Virtual",
         description = {
             "Worked closely with clients to create custom scripts and modify pre-existing code.",
@@ -54,8 +56,8 @@ local config = {
     {
         jobTitle = "DevOps Lead",
         organization = "Knight Hacks",
-        startDate = "Aug 2021",
-        endDate = "Nov 2021",
+        startDate = "2021-08-01",
+        endDate = "2021-11-01",
         location = "Remote/Virtual",
         description = {
             "Deployed and managed our applications running on a combination of Kubernetes, Azure, and Cloudflare.",
@@ -68,8 +70,8 @@ local config = {
     {
       jobTitle = "Back End Developer",
       organization = "Knight Hacks",
-      startDate = "Feb 2021",
-      endDate = "Nov 2021",
+      startDate = "2021-02-01",
+      endDate = "2021-11-01",
       location = "Remote/Virtual",
       description = {
         "Worked in a team of 6 people using Flask and MongoDB to create tools for student hackathons.",
@@ -84,8 +86,8 @@ local config = {
     {
       jobTitle = "Lua Developer",
       organization = "Innovative Gamers",
-      startDate = "Mar 2019",
-      endDate = "Feb 2020",
+      startDate = "2019-03-01",
+      endDate = "2020-02-01",
       location = "Remote/Virtual",
       description = {
         "Developed a player management system utilizing an SQL database which enhanced the player experience and assisted in managing the player hierarchy.",
@@ -163,9 +165,11 @@ local config = {
         "Python",
         "Lua",
         "LaTeX",
-        "C",
+        "C/C++",
         "Java",
-        "Bash"
+        "Bash",
+        "Rust",
+        "Powershell"
       }
     },
     {
@@ -201,20 +205,18 @@ local config = {
         "MariaDB",
         "MySQL",
         "SQLite",
-        "DynamoDB"
+        "DynamoDB",
+        "AWS RDS"
       }
     },
     {
       categoryName = "Tools & Technologies",
       items = {
-        "MERN",
         "Git",
         "Nginx",
         "Docker",
         "CI/CD",
         "Active Directory",
-        "Prometheus",
-        "Grafana",
         "Tenable Nessus",
         "Kubernetes",
         "AWS",
@@ -223,8 +225,17 @@ local config = {
         "Splunk",
         "Palo Alto",
         "Duo",
-        "Radware Cloud WAF",
-        "Zabbix"
+        "Radware",
+        "Zabbix",
+        "PRTG",
+        "Ansible",
+        "Terraform",
+        "Puppet",
+        "Cymulate",
+        "Cynet",
+        "IPAM",
+        "AWS Security Hub",
+        "IAM"
       }
     }
   },
@@ -234,13 +245,13 @@ local config = {
       institution = "University of Central Florida",
       startDate = "Jul 2020",
       endDate = "Aug 2023"
-    },
+    }--[[,
     {
       degree = "High School Diploma",
       institution = "South Broward High School",
       startDate = "Aug 2016",
       endDate = "May 2020"
-    }
+    }--]]
   },
   certifications = {
     {

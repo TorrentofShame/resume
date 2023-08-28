@@ -35,10 +35,19 @@
 \RequirePackage{graphicx}
 \RequirePackage[nobottomtitles*]{titlesec}
 \RequirePackage[none]{hyphenat}
+%\RequirePackage{microtype}
 
 % Pass options to Loaded Class (ie: super)
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
+
+%\input{glyphtounicode}
+%\pdfglyphtounicode{f_f}{FB00}
+%\pdfglyphtounicode{f_i}{FB01}
+%\pdfglyphtounicode{f_l}{FB02}
+%\pdfglyphtounicode{f_f_i}{FB03}
+%\pdfglyphtounicode{f_f_l}{FB04}
+%\pdfgentounicode=1
 
 %-----------------------------------------------------------
 %    Fonts
