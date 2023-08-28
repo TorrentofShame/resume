@@ -39,7 +39,8 @@ local config = {
           "Worked on an offline-first, ADA compliant progressive web app that assists disabilities living in locations with poor internet.",
           "Architected a dynamic form configuration system using yaml, Formik, and React that allows for the easy configuration of forms that validate user input and automatically add more fields depending on user input.",
           "Manipulated local data, enable offline and cloud synchronization using Amplify DataStore in the frontend.",
-          "Implemented data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend."
+          "Implemented data conflict resolution, versioning and journaling using AWS AppSync with DynamoDB in the backend.",
+          "Worked on projects using the Agile methodology and Jira."
       }
     },
     {
