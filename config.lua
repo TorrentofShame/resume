@@ -8,7 +8,9 @@ local config = {
     git = "github.com/TorrentofShame",
     location = "Orlando, Florida, US"
   },
-  summary = false,
+  summary = [[
+    Passionate about cybersecurity and software engineering, I thrive in diverse tech environments. From managing AWS infrastructure to architecting web apps, I've honed skills that bridge innovation and security. I've mastered IaC, Ansible, and more, automating server config and making mundane processes more efficient. Working with Agile projects, with ever changing requirements, has honed my ability to adapt and learn new frameworks and processes on the fly. I have experience with the entire application lifecycle, from design and development, to testing and deployment, and finally monitoring, I know what needs to happen each step of the way, which helps me collaborate across teams to ensure smooth operation. In every endeavor, I'm dedicated to delivering results that exceed expectations and contribute to seamless collaboration and success.
+  ]],
   --summary = [[
   --      I'm a passionate, resourceful, and self-taught developer.
   --]], -- nil causes lipsum[1][1-2]
