@@ -26,7 +26,7 @@ local config = {
         "Utilizing IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, Powershell to automate the configuration of servers, networks, and AD users.",
         "Creating and Optimizing Splunk dashboards for SOC and clients to utilize when monitoring security services.",
         "Creating and Maintaining Notable Events for use by SOC using logs ingested from various sources.",
-        "Creating custom integrations to streamline the collection of customer logs from various sources.",
+        "Creating custom integrations using automated Python, Bash, and Powershell scripts in Docker containers to streamline the collection of customer logs from various sources.",
         "Managing Palo Alto Firewalls with Panorama",
         "Deploying and Tuning WAFs for client public-facing applications."
       }
