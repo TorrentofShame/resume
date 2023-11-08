@@ -28,7 +28,10 @@ local config = {
         "Creating and Maintaining Notable Events for use by SOC using logs ingested from various sources.",
         "Creating custom integrations using automated Python, Bash, and Powershell scripts in Docker containers to streamline the collection of customer logs from various sources.",
         "Managing Palo Alto Firewalls with Panorama",
-        "Deploying and Tuning WAFs for client public-facing applications."
+        "Deploying and Tuning WAFs for client public-facing applications.",
+        "Evaluating and implementing new technologies into current stack.",
+        "Providing support to Linux and Windows servers and workstations.",
+        "Deployed and managing Zabbix to replace PRTG in monitor system performance and availability and report issues to Splunk."
       }
     },
     {
