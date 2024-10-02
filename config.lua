@@ -2,36 +2,48 @@ local config = {
   profile = {
     logo = "logo",
     name = "Simon Weizman",
-    headline = "Systems Engineer @ GLESEC",
+    headline = "Systems Engineer-IT @ Lockeed Martin",
     email = "contact@simon.weizman.us",
     website = "simon.weizman.dev",
     git = "github.com/TorrentofShame",
     location = "Orlando, Florida, US"
   },
   summary = [[
-    Passionate about cybersecurity and software engineering, I thrive in diverse tech environments. From managing AWS infrastructure to architecting web apps, I've honed skills that bridge innovation and security. I've mastered IaC, Ansible, and more, automating server config and making mundane processes more efficient. Working with Agile projects, with ever changing requirements, has honed my ability to adapt and learn new frameworks and processes on the fly. I have experience with the entire application lifecycle, from design and development, to testing and deployment, and finally monitoring, I know what needs to happen each step of the way, which helps me collaborate across teams to ensure smooth operation. In every endeavor, I'm dedicated to delivering results that exceed expectations and contribute to seamless collaboration and success.
+    Passionate about cybersecurity and systems engineering, I thrive in diverse tech environments. From managing infrastructure to architecting web apps, I've honed skills that bridge innovation and security. I've mastered IaC, Ansible, and more, automating server config and making mundane processes more efficient. Working with Agile projects, with ever changing requirements, has honed my ability to adapt and learn new frameworks and processes on the fly. I have experience with the entire application lifecycle, from design and development, to testing and deployment, and finally monitoring, I know what needs to happen each step of the way, which helps me collaborate across teams to ensure smooth operation. In every endeavor, I'm dedicated to delivering results that exceed expectations and contribute to seamless collaboration and success.
   ]],
   --summary = [[
   --      I'm a passionate, resourceful, and self-taught developer.
   --]], -- nil causes lipsum[1][1-2]
   experience = {
     {
+      jobTitle = "Systems Engineer-IT Asc",
+      organization = "Lockheed Martin",
+      startDate = "2024-05-06",
+      endDate = nil,
+      location = "Orlando, FL",
+      description = {}
+    },
+    {
       jobTitle = "Systems Engineer",
       organization = "GLESEC Group",
       startDate = "2022-08-01",
-      endDate = nil,
+      endDate = "2024-04-15",
       location = "Orlando, FL",
       description = {
-        "Managing AWS infrastructure such as EC2, ECR, and VPCs.",
-        "Utilizing IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, Powershell to automate the configuration of servers, networks, and AD users.",
-        "Creating and Optimizing Splunk dashboards for SOC and clients to utilize when monitoring security services.",
-        "Creating and Maintaining Notable Events for use by SOC using logs ingested from various sources.",
-        "Creating custom integrations using automated Python, Bash, and Powershell scripts in Docker containers to streamline the collection of customer logs from various sources.",
-        "Managing Palo Alto Firewalls with Panorama",
-        "Deploying and Tuning WAFs for client public-facing applications.",
+        "Managed AWS infrastructure such as EC2, ECR, and VPCs.",
+        "Utilized IaC and automation tools such as Ansible, Terraform, Puppet Enterprise, and Powershell to automate the configuration of servers, networks, and AD users.",
+        "Created and Optimized Splunk dashboards for SOC and client to utilize when monitoring security services.",
+        "Created and Maintained Notable Events for use by SOC using logs ingested from various sources.",
+        "Created custom integrations using automated Python, Bash, and Powershell scripts in Docker containers to streamline the collection of customer logs from various sources.",
+        --[[
+        "Managed Palo Alto Firewalls with Panorama.",
+        "Deployed and Tuned WAFs for client public-facing applications.",
+        "Responsible for monitoring company products for degradation, downtime, and interruptions and taking actions to restore the products.",
+        "Reviewed current systems and policies and provided recommendations that will improve reliability, observability, efficiency, and performance of company products while also ensuring a higher level of consistency in monitoring and operations."
         "Evaluating and implementing new technologies into current stack.",
         "Providing support to Linux and Windows servers and workstations.",
         "Deployed and managing Zabbix to replace PRTG in monitor system performance and availability and report issues to Splunk."
+        --]]
       }
     },
     {
@@ -48,6 +60,7 @@ local config = {
           "Worked on projects using the Agile methodology and Jira."
       }
     },
+    --[[
     {
         jobTitle = "Freelance Developer",
         organization = "Upwork",
@@ -102,7 +115,7 @@ local config = {
         "Documented the steps necessary to configure the different features on the server.",
         "Maintained and managed the server's code and database."
       }
-    }--[[,
+    },
     {
       jobTitle = "Summer Camp Counselor",
       organization = "Peg Camp",
@@ -121,8 +134,9 @@ local config = {
       name = "BEARMAX",
       startDate = "Aug 2022",
       endDate = "May 2023",
-      shortDescription = "A Robot for Social Emotional Learning Facilitation for Children with Autism."
+      shortDescription = "A Robot with companion mobile app and website for Social Emotional Learning Facilitation for Children with Autism. Built using ROS, machine learning, React, React Native, and Express. Deployed on an Nvidia Jetson and 2 Arduinos."
     },
+    --[[
     {
       name = "LuaLaTeX Resume",
       startDate = "Nov 2020",
@@ -140,7 +154,7 @@ local config = {
       startDate = "Jul 2020",
       endDate = nil,
       shortDescription = "A custom Webmail client created with Node.js, Express.js, and Pug.js"
-    },
+    },--]]
     {
       name = "Back-end for Knight Hacks",
       startDate = "Feb 2021",
@@ -148,24 +162,23 @@ local config = {
       shortDescription = "The back-end for Knight Hacks, built with Flask and deployed on AKS."
     },
     {
-        name = "Personal Homelab Server",
+        name = "Personal Homelab",
         startDate = "Mar 2018",
-        endDate = "Jul 2020",
-        shortDescription = "I owned, maintained, and administered an old Dell Poweredge R710 that I used to learn about virtualization, DevOps and server management."
+        endDate = nil,
+        shortDescription = "I run a virtualization cluster at home on some old thinkcentre computers that I use to host services for myself but mostly experiment and learn about IT and security tools."
     },
+    --[[
     {
         name = "Why don't people format their numbers browser extension",
         startDate = "Sep 2020",
         endDate = "Sep 2020",
         shortDescription = "A very small and simple Google Chrome browser extension using JavaScript to help me read large, especially unformatted numbers."
-    },
+    },--]]
   },
   skills = {
     {
       categoryName = "Programming Languages",
       items = {
-        "HTML",
-        "CSS/SASS",
         "JavaScript",
         "TypeScript",
         "Python",
@@ -173,75 +186,35 @@ local config = {
         "LaTeX",
         "C/C++",
         "Java",
-        "Bash",
         "Rust",
+        "Bash",
         "Powershell"
       }
     },
     {
-      categoryName = "Frontend",
+      categoryName = "Frameworks",
       items = {
         "React.js",
         "React Native",
-        "Bootstrap",
-        "jQuery",
-        "Webpack",
-        "Next.js",
-        "PWAs"
-      }
-    },
-    {
-      categoryName = "Backend",
-      items = {
-        "Node.js",
-        "REST API",
-        "JWT",
-        "OAuth",
-        "CDN",
         "Flask",
         "Express.js",
-        "Celery"
-      }
-    },
-    {
-      categoryName = "Databases",
-      items = {
-        "MongoDB",
-        "PostgreSQL",
-        "MariaDB",
-        "MySQL",
-        "SQLite",
-        "DynamoDB",
-        "AWS RDS"
+        "Actix",
+        "ROS"
       }
     },
     {
       categoryName = "Tools & Technologies",
       items = {
-        "Git",
-        "Nginx",
         "Docker",
-        "CI/CD",
-        "Active Directory",
-        "Tenable Nessus",
-        "Kubernetes",
-        "AWS",
         "Linux",
-        "Vim",
+        "Kubernetes",
+        "Hyper-V",
+        "Active Directory",
+        "Palo Alto NGFW",
         "Splunk",
-        "Palo Alto",
-        "Duo",
-        "Radware",
-        "Zabbix",
-        "PRTG",
+        "MDT",
         "Ansible",
-        "Terraform",
-        "Puppet",
-        "Cymulate",
-        "Cynet",
-        "IPAM",
-        "AWS Security Hub",
-        "IAM"
+        "Gitlab CI/CD"
       }
     }
   },
@@ -261,46 +234,11 @@ local config = {
   },
   certifications = {
     {
-      name = "Certified Technical Solution Architect",
-      issuer = "Cynet",
-      issueDate = "Aug 2022",
-      expireDate = nil,
-      logo = "cynet-logo"
-    },
-    {
       name = "CompTIA Security+ ce",
       issuer = "CompTIA",
       issueDate = "Dec 2021",
-      expireDate = "Dec 2024",
+      expireDate = "Dec 2027",
       logo = "comptia-security-ce-certification"
-    },
-    {
-      name = "Certified Level 1 Duo Administrator",
-      issuer = "Duo",
-      issueDate = "Aug 2022",
-      expireDate = "Aug 2024",
-      logo = "duo-level-one-administrator"
-    },
-    {
-      name = "Autodesk Inventor Certified User",
-      issuer = "Autodesk",
-      issueDate = "May 2020",
-      expireDate = nil,
-      logo = "autodesk-inventor-certified-user"
-    },
-    {
-      name = "Autodesk AutoCAD Certified User",
-      issuer = "Autodesk",
-      issueDate = "Feb 2020",
-      expireDate = nil,
-      logo = "autodesk-autocad-certified-user"
-    },
-    {
-      name = "AutoCAD Certified Professional",
-      issuer = "Autodesk",
-      issueDate = "Jun 2020",
-      expireDate = "Jun 2023",
-      logo = "autocad-certified-professional"
     }
   },
   languages = nil
