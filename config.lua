@@ -18,7 +18,7 @@ local config = {
     {
       jobTitle = "Systems Engineer-IT",
       organization = "Lockheed Martin",
-      startDate = "2024-08-18",
+      startDate = "2025-08-18",
       endDate = nil,
       location = "Orlando, FL",
       description = {}
