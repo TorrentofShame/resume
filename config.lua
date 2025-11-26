@@ -16,10 +16,18 @@ local config = {
   --]], -- nil causes lipsum[1][1-2]
   experience = {
     {
+      jobTitle = "Systems Engineer-IT",
+      organization = "Lockheed Martin",
+      startDate = "2024-08-18",
+      endDate = nil,
+      location = "Orlando, FL",
+      description = {}
+    },
+    {
       jobTitle = "Systems Engineer-IT Asc",
       organization = "Lockheed Martin",
       startDate = "2024-05-06",
-      endDate = nil,
+      endDate = "2025-08-18",
       location = "Orlando, FL",
       description = {}
     },
@@ -207,14 +215,18 @@ local config = {
       items = {
         "Docker",
         "Linux",
+        "Windows",
         "Kubernetes",
         "Hyper-V",
         "Active Directory",
         "Palo Alto NGFW",
         "Splunk",
+        "PRTG",
+        "AWS",
         "MDT",
         "Ansible",
-        "Gitlab CI/CD"
+        "Gitlab CI/CD",
+        "vSphere"
       }
     }
   },
